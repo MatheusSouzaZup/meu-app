@@ -7,7 +7,7 @@ import android.preference.PreferenceManager
 import br.com.meuape.MeuApeApplication
 import dagger.Module
 import dagger.Provides
-import hands.android.webmotors.mvvm.room.AppDatabase
+import br.com.meuape.room.AppDatabase
 import javax.inject.Singleton
 
 @Module

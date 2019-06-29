@@ -7,7 +7,7 @@ import br.com.meuape.di.app.DaggerAppComponent
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasActivityInjector
-import hands.android.webmotors.mvvm.room.AppDatabase
+import br.com.meuape.room.AppDatabase
 import javax.inject.Inject
 
 class MeuApeApplication : Application(), HasActivityInjector {

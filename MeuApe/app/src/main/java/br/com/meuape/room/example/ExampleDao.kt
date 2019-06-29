@@ -1,8 +1,8 @@
-package hands.android.webmotors.mvvm.room.example
+package br.com.meuape.room.example
 
 import android.arch.lifecycle.LiveData
 import android.arch.persistence.room.*
-import hands.android.webmotors.mvvm.room.example.Example
+import br.com.meuape.room.example.Example
 
 @Dao
 interface ExampleDao {

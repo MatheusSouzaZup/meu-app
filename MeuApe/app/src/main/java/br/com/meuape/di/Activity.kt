@@ -1,4 +1,4 @@
-package hands.android.webmotors.mvvm.di
+package br.com.meuape.di
 
 import javax.inject.Scope
 

@@ -1,4 +1,4 @@
-package hands.android.webmotors.mvvm.di
+package br.com.meuape.di
 
 import android.arch.lifecycle.ViewModel
 import dagger.MapKey

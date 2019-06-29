@@ -1,4 +1,4 @@
-package hands.android.webmotors.mvvm.model
+package br.com.meuape.model
 
 import android.arch.lifecycle.LiveData
 

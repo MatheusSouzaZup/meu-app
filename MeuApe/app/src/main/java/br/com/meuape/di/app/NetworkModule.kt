@@ -1,11 +1,10 @@
 package br.com.meuape.di.app
 
-import android.content.Context
+import br.com.meuape.di.RetrofitApi
 import com.google.gson.Gson
 import com.google.gson.GsonBuilder
 import dagger.Module
 import dagger.Provides
-import hands.android.webmotors.mvvm.di.*
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

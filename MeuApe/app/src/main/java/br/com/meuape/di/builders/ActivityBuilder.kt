@@ -4,7 +4,7 @@ import br.com.meuape.view.home.HomeActivity
 import br.com.meuape.view.home.HomeModule
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
-import hands.android.webmotors.mvvm.di.Activity
+import br.com.meuape.di.Activity
 
 
 @Module

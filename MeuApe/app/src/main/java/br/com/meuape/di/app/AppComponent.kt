@@ -3,11 +3,10 @@ package br.com.meuape.di.app
 import android.app.Application
 import br.com.meuape.MeuApeApplication
 import br.com.meuape.di.builders.ActivityBuilder
-import hands.android.webmotors.mvvm.di.builders.ViewModelBuilder
+import br.com.meuape.di.builders.ViewModelBuilder
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.support.AndroidSupportInjectionModule
-import hands.android.webmotors.mvvm.di.app.ApiServiceModule
 import javax.inject.Singleton
 
 

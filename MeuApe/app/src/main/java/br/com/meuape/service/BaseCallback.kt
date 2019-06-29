@@ -1,6 +1,6 @@
-package hands.android.webmotors.mvvm.service
+package br.com.meuape.service
 
-import hands.android.webmotors.mvvm.model.BaseData
+import br.com.meuape.model.BaseData
 import com.google.gson.Gson
 import retrofit2.Call
 import retrofit2.Callback

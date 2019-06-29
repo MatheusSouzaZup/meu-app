@@ -1,9 +1,7 @@
-package hands.android.webmotors.mvvm.di.app
+package br.com.meuape.di.app
 
 import dagger.Module
-import dagger.Provides
-import hands.android.webmotors.mvvm.di.*
-import hands.android.webmotors.mvvm.service.*
+
 import retrofit2.Retrofit
 
 

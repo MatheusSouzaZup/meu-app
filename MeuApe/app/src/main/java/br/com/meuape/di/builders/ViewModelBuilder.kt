@@ -1,13 +1,13 @@
-package hands.android.webmotors.mvvm.di.builders
+package br.com.meuape.di.builders
 
 import android.arch.lifecycle.ViewModel
 import android.arch.lifecycle.ViewModelProvider
 import br.com.meuape.viewmodel.HomeViewModel
+import br.com.meuape.viewmodel.ViewModelProviderFactory
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
-import hands.android.webmotors.mvvm.di.ViewModelKey
-import hands.android.webmotors.mvvm.viewmodel.*
+import br.com.meuape.di.ViewModelKey
 
 /**
  * Created by rafaelneiva on 12/06/18.
@@ -16,7 +16,6 @@ import hands.android.webmotors.mvvm.viewmodel.*
 @Module
 abstract class ViewModelBuilder {
 
-    // Garage
     @Binds
     @IntoMap
     @ViewModelKey(HomeViewModel::class)
