@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MeuApe</string>
+    <string name="home_start">Começar</string>
+    <string name="home_instructions">Instruções</string>
+    <string name="home_credtis">Créditos</string>
+    <string name="intro_warning">Se você não responder todas as perguntas, seus dados não\n poderão ser utilizados na
+        pesquisa.
+    </string>
+    <string name="intro_ok">OK</string>
+    <string name="info_title">O que é esta pesquisa?</string>
+    <string name="info_content"><![CDATA[
+       Este ambiente digital foi elaborado com o intuito de avaliar\n COMO VOCÊ MORA de forma mais lúdica e interativa.\n
+       Pretendemos através dessa ferramenta digital, compreender \nquestões relativas ao seu modo de vida e maneira de morar\n nas diversas escalas de sua moradia: desde o bairro até sua casa.\n
+       As informações coletadas irão compor um banco de dados\n sobre o morar comtemporâneo, alimentando novos projetos e\nações ruma à elevação da qualidade das moradias em nossas cidades.
+]]></string>
+    <string name="terms_title">Termo de consentimento livre e esclarecido</string>
+    <string name="terms_agree">Concordo</string>
+    <string name="terms_diseagree">Não concordo</string>
+</resources>
