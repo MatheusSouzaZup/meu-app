@@ -1,54 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
     <RelativeLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorPurple">
 
-        <TextView
-                android:id="@+id/tvTitle"
-                android:layout_marginTop="50dp"
+        <android.support.v4.widget.NestedScrollView
+                android:layout_above="@id/bottom"
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPurple">
+
+
+                <TextView
+                        android:id="@+id/tvTitle"
+                        android:layout_marginTop="50dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/terms_title"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp"
+                        android:textAlignment="center"/>
+
+                <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/btBack"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:srcCompat="@drawable/ic_back"
+                        android:background="@color/transparent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="20dp"/>
+
+                <TextView
+                        android:scrollbars="vertical"
+                        android:id="@+id/wvTerms"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_below="@id/tvTitle"
+                        android:layout_toEndOf="@id/btBack"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorWhite"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:text="@string/terms_content"
+                        android:layout_marginEnd="120dp"/>
+
+                <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btStart"
+                        style="@style/HomeButton"
+                        android:text="@string/terms_agree"
+                        android:layout_marginTop="20dp"
+                        android:layout_alignStart="@id/wvTerms"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_below="@+id/wvTerms"/>
+
+                <android.support.v7.widget.AppCompatButton
+                        android:id="@+id/btInstructions"
+                        style="@style/HomeButton"
+                        android:text="@string/terms_diseagree"
+                        android:layout_below="@id/wvTerms"
+                        android:layout_alignEnd="@id/wvTerms"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="10dp"/>
+
+
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <br.com.meuape.custom.BottomView
+                android:id="@+id/bottom"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/terms_title"
-                android:textColor="@color/colorWhite"
-                android:textSize="22sp"
-                android:textAlignment="center"/>
-
-        <android.support.v7.widget.AppCompatImageButton
-                android:id="@+id/btBack"
-                android:layout_width="50dp" android:layout_height="50dp"
-                android:background="@color/transparent"
-                android:layout_centerVertical="true"
-                android:layout_marginStart="20dp"/>
-
-        <WebView
-                android:id="@+id/wvTerms"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/tvTitle"
-                android:layout_toEndOf="@id/btBack"
-                android:layout_marginStart="50dp"
-                android:layout_marginEnd="120dp"/>
-
-        <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btStart"
-                style="@style/HomeButton"
-                android:text="@string/terms_agree"
-                android:layout_below="@id/wvTerms"
-                android:layout_marginTop="20dp"
-                android:layout_alignStart="@id/wvTerms"
-                android:layout_marginStart="40dp"/>
-
-        <android.support.v7.widget.AppCompatButton
-                android:id="@+id/btInstructions"
-                style="@style/HomeButton"
-                android:text="@string/terms_diseagree"
-                android:layout_below="@id/wvTerms"
-                android:layout_alignEnd="@id/wvTerms"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="40dp"/>
-
+                android:layout_alignParentBottom="true"/>
     </RelativeLayout>
 </layout>

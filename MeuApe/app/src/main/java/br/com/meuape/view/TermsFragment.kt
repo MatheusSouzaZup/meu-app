@@ -1,5 +1,6 @@
 package br.com.meuape.view
 
+import android.text.method.ScrollingMovementMethod
 import br.com.meuape.R
 import br.com.meuape.databinding.FragmentTermsBinding
 import br.com.meuape.viewmodel.BaseViewModel
@@ -18,6 +19,6 @@ class TermsFragment : BaseFragment<FragmentTermsBinding, BaseViewModel>() {
     }
 
     override fun init() {
-
+        bind.wvTerms.movementMethod = ScrollingMovementMethod()
     }
 }

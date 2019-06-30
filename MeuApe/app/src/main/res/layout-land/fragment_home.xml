@@ -39,6 +39,9 @@
             </LinearLayout>
         </LinearLayout>
 
+        <br.com.meuape.custom.BottomView android:layout_width="match_parent"
+                                         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"/>
 
     </RelativeLayout>
 </layout>
